@@ -1,6 +1,6 @@
 [package]
 name = "armature-macros-utils"
-version = "0.3.1"
+version = "0.4.0"
 edition = "2024"
 rust-version = "1.94.1"
 authors = ["Joseph Quinn <quinn.josephr@proton.me>"]
@@ -25,7 +25,7 @@ cargo-husky = { version = "1.5", default-features = false, features = ["user-hoo
 # expansions, so they are pulled in as dev-dependencies only. Callers of the
 # macros must depend on the same crates themselves (see the crate docs — in
 # particular `validate_email!` requires the caller to depend on `regex`).
-armature-core = { version = "0.8" }
+armature-core = { version = "0.9" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 regex = "1"

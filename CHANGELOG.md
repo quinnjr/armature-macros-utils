@@ -9,14 +9,12 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
-### Fixed
+## [0.4.1] - 2026-09-15
 
-- **Breaking:** `#[api(...)]` rejects an unrecognized option instead of ignoring it. `#[api(skipp)]` left the field serialized, and the documented use for the attribute is redacting a password.
+### Changed
 
-### Changed — `0.2.0` → `0.2.1`
-
-- Migrated onto `armature-core` `0.8`'s `Bytes`-backed request and response types. No behavior change beyond what that migration implies; see [`armature-core/CHANGELOG.md`](../armature-core/CHANGELOG.md).
-- The `html!` and `text!` macros build the response body as `Bytes`.
+- Requires `armature-core` 0.10 (was `0.9`).
+- Dependencies bumped to their latest releases: `syn` 2.0 → 3.0.
 
 ## [0.4.0] - 2026-08-05
 
